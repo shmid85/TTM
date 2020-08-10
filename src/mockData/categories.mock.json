@@ -1,0 +1,91 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Detectives",
+            "flags": "logged"
+        },
+        {
+            "id": 2,
+            "name": "Humor",
+            "flags": ""
+        },
+        {
+            "id": 3,
+            "name": "Technical",
+            "flags": "logged"
+        },
+        {
+            "id": 4,
+            "name": "Adventures",
+            "flags": "logged"
+        },
+        {
+            "id": 5,
+            "name": "Historical",
+            "flags": ""
+        }
+    ],
+    "subcategories": [
+        {
+            "id": 11,
+            "name": "Classic",
+            "parent_id": 1,
+            "flags": "logged"
+        },
+        {
+            "id": 12,
+            "name": "Modern",
+            "parent_id": 1,
+            "flags": "logged"
+        },
+        {
+            "id": 21,
+            "name": "Adult",
+            "parent_id": 2,
+            "flags": ""
+        },
+        {
+            "id": 22,
+            "name": "Teen",
+            "parent_id": 2,
+            "flags": "logged"
+        },
+        {
+            "id": 31,
+            "name": "Programming",
+            "parent_id": 3,
+            "flags": ""
+        },
+        {
+            "id": 32,
+            "name": "Car repairing",
+            "parent_id": 3,
+            "flags": "logged"
+        },
+        {
+            "id": 41,
+            "name": "Sea",
+            "parent_id": 4,
+            "flags": ""
+        },
+        {
+            "id": 42,
+            "name": "War",
+            "parent_id": 4,
+            "flags": "logged"
+        },
+        {
+            "id": 51,
+            "name": "World war i",
+            "parent_id": 5,
+            "flags": ""
+        },
+        {
+            "id": 52,
+            "name": "World war ii",
+            "parent_id": 5,
+            "flags": "logged"
+        }
+    ]
+}
