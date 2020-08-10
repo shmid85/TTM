@@ -1,0 +1,14 @@
+###########################################################################
+# TTM test application
+###########################################################################
+
+# Before run the application run the command in the root folder:
+# npm install
+
+# To run the application in production mode use command:
+# npm run start-prod
+
+# To run the application in development mode use command:
+# npm run start-dev
+
+###########################################################################
