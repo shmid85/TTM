@@ -1,91 +1,82 @@
 {
-    "categories": [
-        {
-            "id": 1,
-            "name": "Detectives",
-            "flags": "logged"
-        },
-        {
-            "id": 2,
-            "name": "Humor",
-            "flags": ""
-        },
-        {
-            "id": 3,
-            "name": "Technical",
-            "flags": "logged"
-        },
-        {
-            "id": 4,
-            "name": "Adventures",
-            "flags": "logged"
-        },
-        {
-            "id": 5,
-            "name": "Historical",
-            "flags": ""
-        }
-    ],
-    "items": [
-        {
-            "id": 11,
-            "name": "Agatha Christie - The ABC Murders",
-            "parentId": 1,
-            "flags": "logged"
-        },
-        {
-            "id": 12,
-            "name": "Agatha Christie - The Murder of Roger Ackroyd",
-            "parentId": 1,
-            "flags": "logged"
-        },
-        {
-            "id": 21,
-            "name": "Ilf and Petrov - The Twelve Chairs",
-            "parentId": 2,
-            "flags": ""
-        },
-        {
-            "id": 22,
-            "name": "Ilf and Petrov - Golden calf",
-            "parentId": 2,
-            "flags": "logged"
-        },
-        {
-            "id": 31,
-            "name": "David Flanagan - JavaScript: The Definitive Guide",
-            "parentId": 3,
-            "flags": ""
-        },
-        {
-            "id": 32,
-            "name": "Douglas Crockford- JavaScript: The Good Parts",
-            "parentId": 3,
-            "flags": "logged"
-        },
-        {
-            "id": 41,
-            "name": "Robert Louis Stevenson - Treasure Island",
-            "parentId": 4,
-            "flags": ""
-        },
-        {
-            "id": 42,
-            "name": "Robert Louis Stevenson - Black arrow",
-            "parentId": 4,
-            "flags": "logged"
-        },
-        {
-            "id": 51,
-            "name": "Clint Hill - Five Presidents",
-            "parentId": 5,
-            "flags": ""
-        },
-        {
-            "id": 52,
-            "name": "Chris Wallace - Countdown 1945",
-            "parentId": 5,
-            "flags": "logged"
-        }
-    ]
+  "categories": [
+    {
+      "id": 2,
+      "name": "Humor",
+      "flags": ""
+    },
+    {
+      "id": 3,
+      "name": "Technical",
+      "flags": "logged"
+    },
+    {
+      "id": 4,
+      "name": "Adventures",
+      "flags": "logged"
+    },
+    {
+      "id": 5,
+      "name": "Historical",
+      "flags": ""
+    },
+    {
+      "id": 6
+    },
+    {
+      "name": "TEST CAT",
+      "flags": "logged",
+      "id": 7
+    }
+  ],
+  "items": [
+    {
+      "id": 21,
+      "name": "Ilf and Petrov - The Twelve Chairs",
+      "parentId": 2,
+      "flags": ""
+    },
+    {
+      "id": 22,
+      "name": "Ilf and Petrov - Golden calf",
+      "parentId": 2,
+      "flags": "logged"
+    },
+    {
+      "id": 31,
+      "name": "David Flanagan - JavaScript: The Definitive Guide",
+      "parentId": 3,
+      "flags": ""
+    },
+    {
+      "id": 32,
+      "name": "Douglas Crockford- JavaScript: The Good Parts",
+      "parentId": 3,
+      "flags": "logged"
+    },
+    {
+      "id": 41,
+      "name": "Robert Louis Stevenson - Treasure Island",
+      "parentId": 4,
+      "flags": ""
+    },
+    {
+      "id": 42,
+      "name": "Robert Louis Stevenson - Black arrow",
+      "parentId": 4,
+      "flags": "logged"
+    },
+    {
+      "id": 51,
+      "name": "Clint Hill - Five Presidents",
+      "parentId": 5,
+      "flags": ""
+    },
+    {
+      "id": 52,
+      "name": "Chris Wallace - Countdown 1945",
+      "parentId": 5,
+      "flags": "logged"
+    }
+  ]
 }
