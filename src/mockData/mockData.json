@@ -30,61 +30,61 @@
         {
             "id": 11,
             "name": "Agatha Christie - The ABC Murders",
-            "parent_id": 1,
+            "parentId": 1,
             "flags": "logged"
         },
         {
             "id": 12,
             "name": "Agatha Christie - The Murder of Roger Ackroyd",
-            "parent_id": 1,
+            "parentId": 1,
             "flags": "logged"
         },
         {
             "id": 21,
             "name": "Ilf and Petrov - The Twelve Chairs",
-            "parent_id": 2,
+            "parentId": 2,
             "flags": ""
         },
         {
             "id": 22,
             "name": "Ilf and Petrov - Golden calf",
-            "parent_id": 2,
+            "parentId": 2,
             "flags": "logged"
         },
         {
             "id": 31,
             "name": "David Flanagan - JavaScript: The Definitive Guide",
-            "parent_id": 3,
+            "parentId": 3,
             "flags": ""
         },
         {
             "id": 32,
             "name": "Douglas Crockford- JavaScript: The Good Parts",
-            "parent_id": 3,
+            "parentId": 3,
             "flags": "logged"
         },
         {
             "id": 41,
             "name": "Robert Louis Stevenson - Treasure Island",
-            "parent_id": 4,
+            "parentId": 4,
             "flags": ""
         },
         {
             "id": 42,
             "name": "Robert Louis Stevenson - Black arrow",
-            "parent_id": 4,
+            "parentId": 4,
             "flags": "logged"
         },
         {
             "id": 51,
             "name": "Clint Hill - Five Presidents",
-            "parent_id": 5,
+            "parentId": 5,
             "flags": ""
         },
         {
             "id": 52,
             "name": "Chris Wallace - Countdown 1945",
-            "parent_id": 5,
+            "parentId": 5,
             "flags": "logged"
         }
     ]
