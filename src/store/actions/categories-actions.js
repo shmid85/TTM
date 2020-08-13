@@ -5,6 +5,8 @@ import {
     DELETE_CATEGORY_SUCCESS,
     GET_ALL_CATEGORIES_STARTED,
     GET_ALL_CATEGORIES_SUCCESS,
+    UPDATE_CATEGORY_STARTED,
+    UPDATE_CATEGORY_SUCCESS,
 } from './action-types';
 import {categoriesService} from "../../services/categories-service";
 import {deleteItemsByParentId} from "./items-actions";
@@ -79,5 +81,30 @@ export function addCategoryStarted() {
 export function addCategorySuccess() {
     return {
         type: ADD_CATEGORY_SUCCESS,
+    }
+}
+
+export function updateCategory(id, name, flags = '') {
+    return dispatch => {
+        dispatch(updateCategoryStarted());
+
+        categoriesService.updateCategory(id, name, flags).then(
+            () => {
+                dispatch(updateCategorySuccess());
+                dispatch(getAllCategories());
+            }
+        );
+    }
+}
+
+export function updateCategoryStarted() {
+    return {
+        type: UPDATE_CATEGORY_STARTED,
+    }
+}
+
+export function updateCategorySuccess() {
+    return {
+        type: UPDATE_CATEGORY_SUCCESS,
     }
 }

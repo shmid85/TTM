@@ -4,7 +4,11 @@ import {
     DELETE_ITEM_STARTED,
     DELETE_ITEM_SUCCESS,
     DELETE_ITEMS_BY_PARENT_ID_STARTED,
-    DELETE_ITEMS_BY_PARENT_ID_SUCCESS, ADD_ITEM_STARTED, ADD_ITEM_SUCCESS,
+    DELETE_ITEMS_BY_PARENT_ID_SUCCESS,
+    ADD_ITEM_STARTED,
+    ADD_ITEM_SUCCESS,
+    UPDATE_ITEM_STARTED,
+    UPDATE_ITEM_SUCCESS,
 } from './action-types';
 
 import {itemsService} from "../../services/items-service";
@@ -112,5 +116,30 @@ export function addItemStarted() {
 export function addItemSuccess() {
     return {
         type: ADD_ITEM_SUCCESS,
+    }
+}
+
+export function updateItem(id, name, flags = '') {
+    return dispatch => {
+        dispatch(updateItemStarted());
+
+        itemsService.updateItem(id, name, flags).then(
+            () => {
+                dispatch(updateItemSuccess());
+                dispatch(getAllItems());
+            }
+        );
+    }
+}
+
+export function updateItemStarted() {
+    return {
+        type: UPDATE_ITEM_STARTED,
+    }
+}
+
+export function updateItemSuccess() {
+    return {
+        type: UPDATE_ITEM_SUCCESS,
     }
 }
