@@ -1,0 +1,67 @@
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    color: darkgray;
+}
+
+.select-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.select-wrapper,
+.multi-select-wrapper {
+    margin: 5px;
+}
+
+.multi-select {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.multi-select-items {
+    border: 1px solid lightgray;
+    padding: 3px;
+}
+
+.multi-select select{
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    height: 40px;
+}
+
+.multi-select select:active,
+.multi-select select:enabled{
+   border: none;
+   outline: none;
+}
+
+.pagination {
+    font-size: 18px;
+    display: flex;
+    color: darkgray;
+    justify-content: space-between;
+}
+
+.pagination .arrow {
+    user-select: none;
+    cursor: pointer;
+}
+
+.pagination span:hover {
+    color: black;
+}
+
+.multiselect-wrapper {
+    width: 250px;
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    align-items: baseline;
+}

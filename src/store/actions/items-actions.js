@@ -9,6 +9,8 @@ import {
     ADD_ITEM_SUCCESS,
     UPDATE_ITEM_STARTED,
     UPDATE_ITEM_SUCCESS,
+    GET_ITEMS_BY_PARENTID_STARTED,
+    GET_ITEMS_BY_PARENTID_SUCCESS,
 } from './action-types';
 
 import {itemsService} from "../../services/items-service";
@@ -67,8 +69,9 @@ export function deleteItemsByParentId(parentId) {
         const {items} = getState();
         const promises = [];
 
-        if(items && items.length) {
+        dispatch(deleteItemsByParentIdStarted());
 
+        if(items && items.length) {
             items.forEach(item => {
                 if(item.parentId === parentId) {
                     promises.push(dispatch(deleteItem(item.id)));
@@ -77,6 +80,7 @@ export function deleteItemsByParentId(parentId) {
 
             Promise.all(promises).then(() => {
                 dispatch(getAllCategories());
+                dispatch(deleteItemsByParentIdSuccess);
             })
         }
     }
@@ -141,5 +145,28 @@ export function updateItemStarted() {
 export function updateItemSuccess() {
     return {
         type: UPDATE_ITEM_SUCCESS,
+    }
+}
+
+export function getItemsByParentId(parentId) {
+    return dispatch => {
+        dispatch(getItemsByParentIdStarted());
+
+        itemsService.getItemsByParentId(parentId).then(
+            result => dispatch(getItemsByParentIdSuccess(result))
+        );
+    }
+}
+
+export function getItemsByParentIdStarted() {
+    return {
+        type: GET_ITEMS_BY_PARENTID_STARTED
+    }
+}
+
+export function getItemsByParentIdSuccess(items) {
+    return {
+        type: GET_ITEMS_BY_PARENTID_SUCCESS,
+        items
     }
 }

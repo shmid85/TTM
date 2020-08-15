@@ -43,5 +43,10 @@ export class itemsService {
             body: JSON.stringify(params),
         });
     }
+
+    static getItemsByParentId(parentId) {
+        return fetch(`http://localhost:51111/items/?parentId=${parentId}`)
+            .then(result => result.json());
+    }
 }
 
