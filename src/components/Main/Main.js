@@ -17,6 +17,7 @@ import {
 import Select from '../Select/Select';
 import MultiSelectWrapper from "../MultiSelectWrapper/MultiSelectWrapper";
 import PropTypes from 'prop-types';
+import {logUserAction} from "../../store/actions/user-actions";
 
 class Main extends Component {
     constructor(props) {
@@ -33,13 +34,9 @@ class Main extends Component {
         this.props.getItemsByParentId(parentId);
     }
 
-    logEvent(event) {
-        console.log(event.target);
-    }
-
     render() {
         return (
-            <div onClick={this.logEvent} onChange={this.logEvent}>
+            <div onClick={this.props.logUserAction} onChange={this.props.logUserAction}>
                 <div className="header">
                     <h1>TTM application</h1>
                 </div>
@@ -78,6 +75,7 @@ const mapDispatchToProps = (dispatch) => {
         updateCategory: (id, name, flags) => dispatch(updateCategory(id, name, flags)),
         updateItem: (id, name, flags) => dispatch(updateItem(id, name, flags)),
         getItemsByParentId: (parentId) => dispatch(getItemsByParentId(parentId)),
+        logUserAction: (event) => dispatch(logUserAction(event)),
     }
 };
 

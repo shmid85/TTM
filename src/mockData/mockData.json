@@ -8,12 +8,12 @@
     {
       "id": 3,
       "name": "Technical",
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 4,
       "name": "Adventures",
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 5,
@@ -32,7 +32,7 @@
       "id": 22,
       "name": "Ilf and Petrov - Golden calf",
       "parentId": 2,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 23,
@@ -44,25 +44,25 @@
       "id": 24,
       "name": "Ostap Bender - My first million",
       "parentId": 2,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 25,
       "name": "Ostap Bender - Team building in after revolutionary russia ",
       "parentId": 2,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 26,
       "name": "Shura Balaganov - How is it to be a son of lt. Shmit",
       "parentId": 2,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 27,
       "name": "Mr. Panikovsky - All about a goose cooking",
       "parentId": 2,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 31,
@@ -74,7 +74,7 @@
       "id": 32,
       "name": "Douglas Crockford- JavaScript: The Good Parts",
       "parentId": 3,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 41,
@@ -86,7 +86,7 @@
       "id": 42,
       "name": "Robert Louis Stevenson - Black arrow",
       "parentId": 4,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 51,
@@ -98,7 +98,7 @@
       "id": 52,
       "name": "11 Chris Wallace - Countdown 1945 Second Edition",
       "parentId": 5,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 53,
@@ -110,13 +110,13 @@
       "id": 54,
       "name": "22 Chris Wallace - Countdown 1945 Second Edition",
       "parentId": 5,
-      "flags": "logged"
+      "flags": "not logged"
     },
     {
       "id": 55,
       "name": "33 Chris Wallace - Countdown 1945 Third Edition",
       "parentId": 5,
-      "flags": "logged"
+      "flags": "not logged"
     }
   ]
 }

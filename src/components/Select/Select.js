@@ -23,10 +23,10 @@ export default class Select extends PureComponent {
     render() {
         if (this.props.categories && this.props.categories.length) {
             const categories = this.props.categories.map(category =>
-                <Option key={category.id} id={category.id} name={category.name}/>
+                <Option key={category.id} id={category.id} name={category.name} flags={category.flags}/>
             );
 
-            return <select id="caterory" onChange={this.changeCategory}>{categories}</select>
+            return <select id="category" onChange={this.changeCategory}>{categories}</select>
         } else {
             return <div>No categories</div>
         }
