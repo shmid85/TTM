@@ -7,6 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'ttm_bundle.js'
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
