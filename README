@@ -17,4 +17,7 @@
 #To run tests use command:
 # npm run start-tests
 
+#To build production
+# npm run build-prod
+
 ###########################################################################

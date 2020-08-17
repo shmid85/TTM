@@ -4,7 +4,8 @@
   "description": "react test application",
   "main": "index.js",
   "scripts": {
-    "start-prod": "webpack --mode production",
+    "build-prod": "webpack --mode production",
+    "start-prod": "webpack-dev-server --mode production --open --hot",
     "start-dev": "webpack-dev-server --mode development --open --hot",
     "start-backend": "json-server --watch ./src/mockData/mockData.json --port 51111  --delay 300",
     "start-tests": "jest"
