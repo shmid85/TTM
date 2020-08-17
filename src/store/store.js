@@ -4,11 +4,15 @@ import thunk from 'redux-thunk';
 import {LOG_USER_ACTION} from "./actions/action-types";
 import {saveUserActionToStore} from "./actions/user-actions";
 
+const ext = window.__REDUX_DEVTOOLS_EXTENSION__;
+const devtoolMiddleware =
+    ext && process.env.NODE_ENV === 'development' ? ext() : f => f;
+
 const store = createStore(
     rootReducer,
     compose(
         applyMiddleware(thunk, createLogger()),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+        devtoolMiddleware,
     )
 );
 
